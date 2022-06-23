@@ -1,0 +1,43 @@
+#head {
+    font-family:'Lexend Deca';
+    text-align:center;
+}
+.test{
+    font-family:'Lexend Deca';
+    text-align:center;
+    font-size:50px;
+}
+.line{
+    font-family:'Lexend Deca';
+    text-align:center;
+    font-size:0px;
+}
+.letter{
+    font-size:40px;
+}
+body {
+    color: #A2BBBC;
+    background-color: #191915;
+}
+#input_box{
+    font-size:30px;
+    font-family:'Lexend Deca';
+}
+.info_tag{
+    position:absolute;
+    bottom:10px;
+    right:10px;
+}
+.space{
+    font-size:40px;
+}
+#bongo{
+    width: 80px;
+    height:65px;
+}
+#carat{
+    font-family:'lexend deca';
+    font-size:60px;
+    position: relative;
+    bottom: 0px;
+}

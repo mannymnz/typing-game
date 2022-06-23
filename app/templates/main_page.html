@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<head>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="/static/dynamics.js"></script>
+    <script src="/static/requests.js"></script>
+    <script src="/static/carat.js"></script>
+    <link rel="stylesheet" href="/static/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Lexend Deca' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="info_tag">version 0.0.0</div>
+
+    <br>
+    <h1 id="head">Typing Speed Test v.1 <img id="bongo" src="/static/BongoCat-1.png">  </h1>
+    <br><br><br>
+    <div id="speed" class="test">Press Key To Start </div>
+    <div id="carat">|</div>
+    <div id="word_table">
+    {% for i in range(len(words)) %}
+        <div id="line_{{i}}" class="line">
+            {% for n in range(len(words[i])) %}
+                <span id="word_{{n}}" class="word">
+                {% for j in range(len(words[i][n])) %}
+                    <span id="l{{i}}w{{n}}c{{j}}" class="letter">{{words[i][n][j]}}</span>
+                {% endfor %}
+
+                <span class="space" id="l{{i}}w{{n}}c{{len(words[i][n])}}"style="font-size:40px">&nbsp;&nbsp;</span>
+               
+                
+                </span>
+            {% endfor %}
+        </div>
+    {% endfor %}
+    <br>
+    <div>
+
+    
+</body>
+
+</html>
