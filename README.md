@@ -1,3 +1,1 @@
-# typing-game
-Simple Typing Game based on Monkeytype.com
-*** edits ***
+Simple Typing Game Website based on Monkeytype.com
